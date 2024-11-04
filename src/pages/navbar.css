@@ -1,0 +1,734 @@
+/* src/pages/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 10px 40px; /* Adjusted padding for the navbar */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 10px; /* Additional padding for the logo area */
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #555;
+  border-radius: 50%;
+  margin-right: 10px; /* Spacing between the circle and text */
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Spacing between navigation items */
+  margin-right: 20px; /* Add some space between the links and the button */
+}
+
+.navbar-links li {
+  display: inline;
+  position: relative; /* Required for dropdown positioning */
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ccc;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  position: absolute; /* Position relative to the parent li */
+  top: 100%; /* Position below the parent */
+  left: 0; /* Align to the left */
+  background-color: #000; /* Match background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  display: flex; /* Use flexbox for columns */
+  padding: 2px; /* Padding around the dropdown */
+  visibility: hidden; /* Hide by default, controlled by JS */
+  z-index: 1000; /* Ensure it is on top of other elements */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  visibility: visible; /* Show dropdown on hover */
+}
+
+/* Column Styles */
+.dropdown-column {
+  margin-right: 10px; /* Space between columns */
+}
+
+.dropdown-column:last-child {
+  margin-right: 0; /* Remove margin for the last column */
+}
+
+.dropdown-column a {
+  display: block; /* Make links block-level for full-width clickable area */
+  padding: 2px 5px; /* Padding for dropdown links */
+  color: #fff; /* Text color for dropdown links */
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-column a:hover {
+  background-color: #00b4d8; /* Change background on hover */
+}
+
+/* Button Styles */
+.contact-btn {
+  background-color: #00b4d8;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #0096c7;
+}
+
+
+
+
+  /*second section*/
+  /* src/pages/Section.css */
+
+/* Main section styling */
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    background-color: #f5f5f5;
+  }
+  
+  .content-container {
+    font-family: 'Poppins',sans-serif;
+    padding: 5%;
+    text-align: center; /* Center text */
+    width: 100%; /* Make the content responsive */
+    max-width: 1200px;
+  }
+  
+  .row {
+    margin: 20px 0; /* Space between rows */
+  }
+  
+  .heading {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .subheading {
+    font-size: 1.2rem;
+   margin-left: 150px;
+    margin-right:150px ;
+    margin-bottom: 20px;
+  }
+  
+  .level-up-btn {
+    background-color: #00b4d8;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .level-up-btn:hover {
+    background-color: #0096c7;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .content-container {
+        padding: 2%;
+       
+      }
+    .heading {
+      font-size: 2rem;
+    }
+  
+    .subheading {
+      font-size: 1rem;
+    }
+  
+    .level-up-btn {
+      font-size: 1rem;
+      padding: 12px 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content-container {
+        padding: 2%;
+       
+      }
+    .heading {
+      font-size: 1.2rem;
+    }
+  
+    .subheading {
+      font-size: 0.7rem;
+    }
+  
+    .level-up-btn {
+      font-size: 0.5rem;
+      padding: 10px 20px;
+    }
+  }
+  /*Third section*/
+  .cards1-section {
+    margin: 20px;
+  }
+  
+  .cards1-heading {
+    text-align: left;
+    font-size: 55px;
+    font-weight: 500;
+    margin-left:20px;
+  }
+  
+  .cards1-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card1 {
+    flex: 1;
+    margin: 0 10px;
+    background-color: transparent;
+    border-radius: 8px; 
+    padding: 15px; 
+   
+  }
+  
+  .card1-heading {
+    text-align: left;
+    font-size: 20px; 
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .card1-paragraph {
+    text-align: left;
+    font-size: 14px; 
+    margin-bottom: 10px;
+  }
+  
+
+
+
+
+  .heading-section {
+    padding: 20px;
+    margin-left:60px;
+    margin-right: 60px;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .heading-section h2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #0b0b0b;
+    line-height: 1.4;
+  }
+  
+  .heading-section .highlight {
+    color: #00b4d8;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 1024px) {
+    .heading-section {
+      padding: 10px;
+    margin-left:10px;
+    margin-right: 10px;
+    }
+    .heading-section h2 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heading-section {
+      padding: 10px;
+    margin-left:10px;
+    margin-right: 10px;
+    }
+    .heading-section h2 {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heading-section {
+      padding: 10px;
+    margin-left:10px;
+    margin-right: 10px;
+    }
+    .heading-section h2 {
+      font-size: 1rem;
+    }
+  }
+
+
+
+
+ /* Container styles */
+.container {
+  display: flex;
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Visibility and tracking styles */
+.visibility, .tracking {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.visibility h2, .tracking h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.visibility p, .tracking p {
+  font-size: 18px;
+  color: #555;
+}
+
+.hr-line {
+  border: 1px solid #ddd;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.features {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.features li {
+  margin-bottom: 10px;
+}
+
+.know-more {
+  display: inline-flex;
+  align-items: center;
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.know-more span {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+/* Image and overlay styles */
+.image-section {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.overlay-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.tracking-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 24px;
+  }
+  .visibility h2, .tracking h2 {
+    font-size: 36px;
+  }
+  .features {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .content {
+    text-align: center;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .visibility h2, .tracking h2 {
+    font-size: 32px;
+  }
+  .features {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  .visibility h2, .tracking h2 {
+    font-size: 24px;
+  }
+  .features {
+    font-size: 12px;
+  }
+  .overlay-box {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+
+
+  /* Mirrored container with image on the left and content on the right */
+.container-mirrored {
+  display: flex;
+  padding: 70px;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.content-mirrored {
+  flex: 1;
+  padding: 20px;
+  margin-left: 40px;
+}
+
+.content-mirrored h1 {
+  font-size: 34px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.visibility, .tracking {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.visibility h2, .tracking h2 {
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.features {
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 20px; /* Adds space for bullets */
+  margin: 20px 0;
+}
+
+.features li {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.know-more {
+  display: inline-flex;
+  align-items: center;
+  color: #545151;
+  text-decoration: none;
+ 
+}
+
+.know-more span {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.image-section-mirrored {
+  position: relative;
+  flex: 1;
+  padding: 20px;
+}
+
+.image-section-mirrored img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .content-mirrored h1 {
+    font-size: 22px;
+  }
+
+  .features li {
+    font-size: 20px;
+  }
+
+  .visibility h2, .tracking h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-mirrored {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .content-mirrored {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .image-section-mirrored {
+    padding: 10px;
+  }
+
+  .content-mirrored h1 {
+    font-size: 20px;
+  }
+
+  .visibility h2, .tracking h2 {
+    font-size: 36px;
+  }
+
+  .features li {
+    font-size: 16px;
+  }
+
+  .know-more {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-mirrored {
+    padding: 5px;
+  }
+
+  .content-mirrored h1 {
+    font-size: 16px;
+  }
+
+  .visibility p, .tracking p {
+    font-size: 10px;
+  }
+
+  .visibility h2, .tracking h2 {
+    font-size: 14px;
+  }
+
+  .features li {
+    font-size: 12px;
+  }
+
+  .know-more span {
+    font-size: 5px;
+  }
+}
+
+
+
+
+
+
+/* General styling */
+.App {
+  text-align: center;
+  font-family: "Poppins",sans-serif;
+  color: #060606;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: black;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px;
+  margin-top: 20px;
+}
+
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card .icon img {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  color: black;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.card p {
+  font-size: 0.8rem;
+  color: black;
+  line-height: 1.4;
+}
+
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
+
+/* General styling */
+.app-container {
+  text-align: center;
+  font-family:"Poppins",sans-serif;
+  
+}
+
+/* Header styling */
+.app-header .title {
+  font-size: 5rem;
+  font-weight: 300;
+  color:black;
+  margin-top: 50px;
+  margin-left:70px;
+  
+}
+
+/* Statistics container styling */
+.statistics-container {
+  display: flex;
+  justify-content: space-around;
+line-height: 0%;
+}
+
+.statistic-card {
+  text-align: left;
+ 
+}
+
+.statistic-percentage {
+  font-size: 4.4rem;
+  font-weight: 300;
+  color: black;
+}
+
+.card-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #00b4d8; 
+  margin: 10px auto;
+}
+
+.statistic-description {
+  font-size: 1.2rem;
+  color:black;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .statistics-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app-header .title {
+    font-size: 2rem;
+  }
+}
+
+
