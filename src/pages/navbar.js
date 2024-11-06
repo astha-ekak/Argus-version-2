@@ -1,6 +1,7 @@
 // src/Navbar.js
 import React, { useState } from 'react';
 import './navbar.css';
+import Button from 'react-bootstrap/Button';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
@@ -71,7 +72,7 @@ const Navbar = () => {
           )}
         </li>
       </ul>
-      <button className="contact-btn">CONTACT</button>
+      <Button href="/contact" className="contact-btn">CONTACT</Button>
     </nav>
 
     {/* Section below the navbar */}
@@ -87,6 +88,26 @@ const Navbar = () => {
         </div>
       </div>
     </section>
+
+
+
+
+
+
+    <div className="image-section11">
+            <img 
+                src="Complete Product Tracking (1515 x 894 px).png"
+                alt="Responsive" 
+                className="responsive-image11" 
+            />
+        </div>
+
+
+
+
+
+
+
 
     <section className="cards1-section">
       <h2 className="cards1-heading">Upgrade your Industries with Smart Solution</h2>
@@ -114,23 +135,18 @@ const Navbar = () => {
   <h2>"Production floors are the heartbeat of operations—<span class="highlight">optimizing this space maximizes overall efficiency."</span></h2>
 </div>
 
-<div className="container">
-      <div className="content">
-        <h1>ACHIEVE END-TO-END VISIBILITY</h1>
-        
-        <div className="visibility">
-          <h2>99.9%</h2>
+<div className="container_use_case">
+      <div className="text-section_use_case">
+        <h2>ACHIEVE END-TO-END VISIBILITY</h2>
+        <div className="product-visibility_use_case">
+          <h1>99.9%</h1>
           <p>Product Visibility</p>
-        </div>
-        
-        <hr className="hr-line" />
-        
-        <div className="tracking">
+        </div> <hr></hr>
+        <div className="material-tracking_use_case">
           <h2>24/7</h2>
           <p>Real-Time Material Tracking</p>
         </div>
-        
-        <ul className="features">
+        <ul className="features-list_use_case">
           <li>Full product traceability with DPP.</li>
           <li>Real-time defect detection, reducing waste.</li>
           <li>Automated compliance for easy audits.</li>
@@ -138,47 +154,46 @@ const Navbar = () => {
           <li>Track recyclables for sustainability.</li>
           <li>Data-driven insights for smarter decisions.</li>
         </ul>
-        
-        <a href="#more" className="know-more">
-          KNOW MORE <span>&rarr;</span>
-        </a>
+        <div className="know_more_text_right">
+          <a href="#more" className="know_more_text_text_right">KNOW MORE</a>
+          <span className="arrow_text_right">→</span>
+        </div>
       </div>
-      
-      <div className="image-section">
-        <img src="Complete Product Tracking.png"  />
-       
+      <div className="image-section_use_case">
+        <img src="Complete Product Tracking.png"  className="tracking-image_use_case" />
+        
       </div>
     </div>
-
     
 
 
-    <div className="container-mirrored">
-      <div className="image-section-mirrored">
-        <img src="Productivity 2.png" alt="Product Line" />
+    <div className="container_text_right">
+      <div className="image_section_text_right">
+        <img src="Productivity 2.png" alt="Product Line" className="tracking_image_text_right" />
       </div>
-      <div className="content-mirrored">
-        <h1>EASY SAFETY CHECK</h1>
-        <div className="visibility">
-          <h2>50%</h2>
-          <p>Reduction in Safety Incident</p>
+      <div className="text_section_text_right">
+        <h1 className="header_text_right">EASY SAFETY CHECK</h1>
+        <div className="product_visibility_text_right">
+          <h2 className="percentage_text_right">50%</h2>
+          <p className="description_text_right">Reduction in Safety Incident</p>
         </div>
-        <hr className="hr-line-mirrored" />
-        <div className="tracking">
-          <h2>65%</h2>
-          <p>Faster Compliance Check</p>
+        <hr></hr>
+        <div className="material_tracking_text_right">
+          <h2 className="availability_text_right">65%</h2>
+          <p className="tracking_description_text_right">Faster Compliance Check</p>
         </div>
-        <ul className="features">
-          <li>Fewer production delays and reduced rework costs.</li>
-          <li>Less manual oversight, freeing up resources.</li>
-          <li>Lower waste, leading to better inventory management.</li>
-          <li>Lower costs with optimized processes.</li>
-          <li>Reduced downtime, increased operational efficiency.</li>
-          <li>Smarter decisions with real-time insights, driving better outcomes.</li>
+        <ul className="features_list_text_right">
+          <li className="feature_item_text_right">Fewer production delays and reduced rework costs.</li>
+          <li className="feature_item_text_right">Less manual oversight, freeing up resources.</li>
+          <li className="feature_item_text_right">Lower waste, leading to better inventory management.</li>
+          <li className="feature_item_text_right">Lower costs with optimized processes.</li>
+          <li className="feature_item_text_right">Reduced downtime, increased operational efficiency.</li>
+          <li className="feature_item_text_right">Smarter decisions with real-time insights, driving better outcomes.</li>
         </ul>
-        <a href="#more" className="know-more">
-          KNOW MORE <span>&rarr;</span>
-        </a>
+        <div className="know_more_text_right">
+          <a href="#more" className="know_more_text_text_right">KNOW MORE</a>
+          <span className="arrow_text_right">→</span>
+        </div>
       </div>
     </div>
      
@@ -186,37 +201,42 @@ const Navbar = () => {
 
 
 
-     
-    <div className="container">
-      <div className="content">
-        <h1>PRODUCT DESCRIPTION #3</h1>
-        <div className="visibility">
-          <h2>70%</h2>
+
+
+    <div className="container_use_case">
+      <div className="text-section_use_case">
+        <h2>STREAMLINE PRODUCTION</h2>
+        <div className="product-visibility_use_case">
+          <h1>70%</h1>
           <p>Faster Operations</p>
         </div>
-        <hr className="hr-line" />
-
-        <div className="tracking">
+        <hr></hr>
+        <div className="material-tracking_use_case">
           <h2>60%</h2>
           <p>Reduction in Operational Delays</p>
         </div>
-        <ul className="features">
-          <li>Faster production means quicker deliveries.</li>
+        <ul className="features-list_use_case">
+        <li>Faster production means quicker deliveries.</li>
           <li>Less manual work lets staff focus on key tasks.</li>
           <li>Better batch & lot tracking reduces costs.</li>
           <li>Lower costs with optimized processes.</li>
           <li>Optimized workforce boosts efficiency.</li>
           <li>Streamline operations, unlock new revenue opportunities</li>
         </ul>
-        <a href="#more" className="know-more">
-          KNOW MORE <span>&rarr;</span>
-        </a>
+        <div className="know_more_text_right">
+          <a href="#more" className="know_more_text_text_right">KNOW MORE</a>
+          <span className="arrow_text_right">→</span>
+        </div>
       </div>
-      <div className="image-section">
-        <img src="Safety 2.png" alt="Product Line" />
+      <div className="image-section_use_case">
+        <img src="Safety 2.png"  className="tracking-image_use_case" />
         
       </div>
     </div>
+    
+
+
+ 
 
 
 
@@ -229,7 +249,7 @@ const Navbar = () => {
         <div className="card">
           <div className="icon">
             
-            <img src="https://via.placeholder.com/50" alt="Icon 1" />
+            <img src="Icon(1).png" alt="Icon 1" />
           </div>
           <h2>Lower operational costs.</h2>
           <p>
@@ -240,9 +260,9 @@ const Navbar = () => {
         <div className="card">
           <div className="icon">
             
-            <img src="https://via.placeholder.com/50" alt="Icon 2" />
+            <img src="Icon(2).png" alt="Icon 2" />
           </div>
-          <h2>Boosted ROI</h2>
+          <h2>Boosted return-of-investment</h2>
           <p>
             Maximize your profit through enhanced efficiency and reduced costs.
           </p>
@@ -251,7 +271,7 @@ const Navbar = () => {
         <div className="card">
           <div className="icon">
           
-            <img src="https://via.placeholder.com/50" alt="Icon 3" />
+            <img src="Icon(3).png" alt="Icon 3" />
           </div>
           <h2>Faster time-to-market.</h2>
           <p>

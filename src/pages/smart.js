@@ -94,26 +94,24 @@ const Smart = () => {
 
 
 
-
- 
-
-    <div className="container-mirrored">
-      <div className="image-section-mirrored">
-        <img src="first.png" alt="Product Line" />
-      </div>
-      <div className="content-mirrored">
-        <h1>CUT LABOR COST BY 30% OF AUTOMATION</h1>
-       <h4 style={{fontWeight:'300'}}>Save 25-30% on manual labour through Automated Inventory Tracking.</h4>
-       <ul className="features">
-          <li>Team spend less time in searching
+    <div className="containerSupply">
+  <div className="image-sectionSupply">
+    <img src="smart1.png" alt="Product Line" />
+  </div>
+  <div className="contentSupply">
+  <h1>CUT LABOR COST BY 30% OF AUTOMATION</h1>
+  <h4 style={{fontWeight:'300'}}>Save 25-30% on manual labour through Automated Inventory Tracking.</h4>
+    <ul className="featuresSupply">
+    <li>Team spend less time in searching
           item to fulfil order.</li>
           <li>Reducing the reliance on costly,
           unplanned repair.</li>
-         
-        </ul>
-        
-      </div>
-    </div>
+    </ul>
+  </div>
+</div>
+
+ 
+
 
 
 
@@ -134,7 +132,7 @@ const Smart = () => {
         
       </div>
       <div className="image-section">
-        <img src="second.png" alt="Product Line" />
+        <img src="smart2.png" alt="Product Line" />
         
       </div>
     </div>
@@ -143,25 +141,21 @@ const Smart = () => {
 
 
 
-
-
-
-    <div className="container-mirrored">
-      <div className="image-section-mirrored">
-        <img src="third.png" alt="Product Line" />
-      </div>
-      <div className="content-mirrored">
-        <h1>ACHEIVE 98% ACCURACY IN INVENTORY SORTING</h1>
-       <h4 style={{fontWeight:'300'}}>Reduce operational error by 60% with precise Automated System.</h4>
-        <ul className="features">
-          <li>Avoid the frustration of misplaced productsduring Rush hour.</li>
+    <div className="containerSupply">
+  <div className="image-sectionSupply">
+    <img src="smart3.png" alt="Product Line" />
+  </div>
+  <div className="contentSupply">
+  <h1>ACHEIVE 98% ACCURACY IN INVENTORY SORTING</h1>
+  <h4 style={{fontWeight:'300'}}>Reduce operational error by 60% with precise Automated System.</h4>
+    <ul className="featuresSupply">
+    <li>Avoid the frustration of misplaced productsduring Rush hour.</li>
           <li>Reducing the reliance on costly,
-          unplanned repair.</li>
-         
-        </ul>
-        
-      </div>
-    </div>
+          unplanned repair.</li></ul>
+  </div>
+</div>
+
+
 
 
 

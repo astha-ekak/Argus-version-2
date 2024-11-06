@@ -130,8 +130,8 @@ const Navbar = () => {
     <img src="Manufacturing 1.png" alt="Product Line" />
   </div>
   <div className="content-mirrored">
-    <h1>Transform
-Operations 
+    <h1>Transform<br />
+Operations <br />
 Beyond the Line</h1>
     <h4 style={{ fontWeight: '300' }}>
     Unlock the power of smart insights to optimize every facet of your manufacturing process.

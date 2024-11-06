@@ -224,6 +224,7 @@
     flex: 1;
     margin-top: 130px;
    margin-left: 50px;
+   padding-left: 50px;
   }
   
   h1 {
@@ -296,9 +297,10 @@
   
     .content {
       text-align: left;
-      padding: 10px;
-      margin-top: 20px;
-      margin-left: 10px;
+      padding: 8px;
+      margin-top: 10px;
+      margin-left: 8px;
+      padding-left: 0px;
     }
   
     .image-section {
@@ -335,7 +337,7 @@
     }
     .content {
         text-align: left;
-        
+        padding-left: 0px;
         order:2;
         margin-top: 20px;
         margin-left: 30px;
@@ -356,150 +358,146 @@
 
 
 
- 
+  .containerSupply { 
+    display: flex;
 
-
-
-.container-mirrored {
-  display: flex;
-  margin:0;
-  padding:0;
-  font-family: "Poppins", sans-serif;
-
-}
-
-.content-mirrored {
-  flex: 1;
-  margin-top:130px;
-  margin-left: 40px;
-}
-
-.content-mirrored h1 {
-  font-size: 24px;
-  font-weight: 400;
-  text-align: left;
-}
-.content-mirrored h4{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .contentSupply {
+    flex: 1;
+   margin-top: 130px;
+    margin-left: 50px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  .contentSupply h4 {
     font-size: 14px;
   }
-
-.features {
-  list-style-type: disc; /* Adds bullet points */
-  padding-left: 40px; /* Adds space for bullets */
-  margin: 20px 0;
-}
-
-.features li {
-  margin-bottom: 5px;
-  text-align: left;
-}
-
-.know-more {
-  display: inline-flex;
-  align-items: center;
-  color: #545151;
-  text-decoration: none;
- 
-}
-
-.know-more span {
-  margin-left: 5px;
-  font-size: 20px;
-}
-
-.image-section-mirrored {
-  position: relative;
-  flex: 1;
-  padding: 20px;
-}
-
-.image-section-mirrored img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Responsive Styling */
-@media (max-width: 1024px) {
-  .content-mirrored h1 {
-    font-size: 22px;
+  
+  .featuresSupply {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 20px; /* Adds space for bullets */
   }
-  .content-mirrored{
-    margin-top:15px;
+  
+  .featuresSupply li {
+    margin-bottom: 5px;
   }
-  .features li {
-    font-size: 20px;
-  }
-
- 
-}
-
-@media (max-width: 768px) {
-  .container-mirrored {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .content-mirrored {
-    text-align: left;
-    padding: 10px;
-    
-        margin-top:15px;
-      
-  }
-
-  .image-section-mirrored {
-    padding: 10px;
-  }
-
-  .content-mirrored h1 {
-    font-size: 20px;
-  }
-
-
-
-  .features li {
-    font-size: 16px;
-  }
-
+  
   .know-more {
-    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
   }
-}
-
-@media (max-width: 480px) {
-    .container-mirrored{
-        padding:5px;
-      }
-  .content-mirrored h1 {
-    font-size: 16px;
-
-  }
-
- 
-  .content-mirrored {
-    text-align: left;
-    padding: 5px;
-    order:2;
-    margin-top:15px;
-  }
-  .image-section-mirrored {
-    padding: 5px;
-    order:1;
-  }
-
-  .features li {
-    font-size: 12px;
-  }
-
+  
   .know-more span {
-    font-size: 5px;
+    margin-left: 5px;
+    font-size: 20px;
   }
-
+  
+  .image-sectionSupply {
+    position: relative;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .image-sectionSupply img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 1024px) {
+    /* Adjust font size for tablet screens */
+    h1 {
+      font-size: 22px;
+    }
+    .featuresSupply li {
+      font-size: 20px;
+    }
+    .contentSupply {
+      flex: 1;
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Stack content vertically on mobile screens */
+    .containerSupply {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .contentSupply {
+      text-align: left;
+      padding: 10px;
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+  
+    .image-sectionSupply {
+      padding: 10px;
+    }
+  
+    .overlay-box {
+      top: 10px;
+      left: 10px;
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    .featuresSupply li {
+      font-size: 16px;
+    }
+    .know-more {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further reduce font sizes on very small screens */
+    .containerSupply {
+      padding: 5px;
+    }
+    h1 {
+      font-size: 16px;
+    }
+    .contentSupply {
+      text-align: left;
+      order: 2;
+      margin-top: 20px;
+      margin-left: 30px;
+    }
+  
+    .image-sectionSupply {
+      padding: 5px;
+      order: 1;
+    }
+    .featuresSupply li {
+      font-size: 12px;
+    }
+    .know-more span {
+      font-size: 5px;
+    }
+  }
+  
 
 
  
-}
+
 
 
 

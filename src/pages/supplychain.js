@@ -95,28 +95,24 @@ const SupplyChainPage = () => {
 
 
 
- 
-
-    <div className="container-mirrored">
-      <div className="image-section-mirrored">
-        <img src="Supply chain optimization 1.png" alt="Product Line" />
-      </div>
-      <div className="content-mirrored">
-        <h1>ENHANCED DELIVERY EFFICIENCY</h1>
-       <h4 style={{fontWeight:'300'}}>Streamline logistics to ensure faster fulfilment and higher customer satisfaction</h4>
-       <ul className="features">
-          <li>Reduce Lead Time</li>
-          <li>Lower Operational Costs</li>
-         
-        </ul>
-        
-      </div>
-    </div>
 
 
-
-
-
+    <div className="containerSupply">
+  <div className="image-sectionSupply">
+    <img src="supply1.png" alt="Product Line" />
+  </div>
+  <div className="contentSupply">
+    <h1>ENHANCED DELIVERY EFFICIENCY</h1>
+    <hr style={{maxWidth:'100%',paddingRight:'100px'}}></hr>
+    <h4 style={{ fontWeight: '300' }}>
+    Streamline logistics to ensure faster fulfilment and higher customer satisfaction
+    </h4>
+    <ul className="featuresSupply">
+    <li>Reduce Lead Time</li>
+    <li>Lower Operational Costs</li>
+    </ul>
+  </div>
+</div>
 
 
     <div className="container">
@@ -133,7 +129,7 @@ const SupplyChainPage = () => {
         
       </div>
       <div className="image-section">
-        <img src="Supply chain optimization 2.png" alt="Product Line" />
+        <img src="supply_!.png" alt="Product Line" />
         
       </div>
     </div>
@@ -143,23 +139,32 @@ const SupplyChainPage = () => {
 
 
 
+   
 
 
-    <div className="container-mirrored">
-      <div className="image-section-mirrored">
-        <img src="Supply chain optimization 3.png" alt="Product Line" />
-      </div>
-      <div className="content-mirrored">
-        <h1>IMPROVED INVENTORY MANAGEMENT</h1>
-       <h4 style={{fontWeight:'300'}}>Optimise Stock levels for better Product Availability and Customer Satisfaction</h4>
-        <ul className="features">
-          <li>Minimize Overproduction and stockout effectively.</li>
+
+
+    <div className="containerSupply">
+  <div className="image-sectionSupply">
+    <img src="supply_3.png" alt="Product Line" />
+  </div>
+  <div className="contentSupply">
+    <h1>IMPROVED INVENTORY MANAGEMENT</h1>
+    <h4 style={{ fontWeight: '300' }}>
+    Optimise Stock levels for better Product Availability and Customer Satisfaction
+    </h4>
+    <ul className="featuresSupply">
+    <li>Minimize Overproduction and stockout effectively.</li>
           <li>Reducing Material wastage </li>
-         
-        </ul>
-        
-      </div>
-    </div>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
 
 
 

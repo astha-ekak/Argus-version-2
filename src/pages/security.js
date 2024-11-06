@@ -97,22 +97,23 @@ Monitoring</h1>
 
 
  
+    <div className="containerSupply">
+  <div className="image-sectionSupply">
+    <img src="sevurity1.png" alt="Product Line" />
+  </div>
+  <div className="contentSupply">
+    <h1>BOOST SAFETY PROTOCOL COMPILANCE BY 35%</h1>
+    <h4 style={{ fontWeight: '300' }}>
+    Reduce the risk of non compliance fines by 30% with enhanced<br /> adherence strategies.
+    </h4>
+    <ul className="featuresSupply">
+    <li>Monitor real-time, Safety compliance.</li>
+    <li>Reduce the risk of costly accident and fines.</li>
+    </ul>
+  </div>
+</div>
 
-    <div className="container-mirrored">
-      <div className="image-section-mirrored">
-        <img src="Argus (Security and Surviellance) 1.png" alt="Product Line" />
-      </div>
-      <div className="content-mirrored">
-        <h1>BOOST SAFETY PROTOCOL COMPILANCE BY 35%</h1>
-       <h4 style={{fontWeight:'300'}}>Reduce the risk of non compliance fines by 30% with enhanced<br /> adherence strategies.</h4>
-       <ul className="features">
-          <li>Monitor real-time, Safety compliance.</li>
-          <li>Reduce the risk of costly accident and fines.</li>
-         
-        </ul>
-        
-      </div>
-    </div>
+  
 
 
 
@@ -134,7 +135,7 @@ Monitoring</h1>
         
       </div>
       <div className="image-section">
-        <img src="Argus (Securty and Surviellance) 2.png" alt="Product Line" />
+        <img src="security2.png" alt="Product Line" />
         
       </div>
     </div>
@@ -142,25 +143,26 @@ Monitoring</h1>
 
 
 
+    <div className="containerSupply">
+  <div className="image-sectionSupply">
+    <img src="security3.png" alt="Product Line" />
+  </div>
+  <div className="contentSupply">
+    <h1>ENSURE A SAFE WORKPLACE WITH CONTINUOS<br /> MONITORING</h1>
+    <h4 style={{ fontWeight: '300' }}>
+    Monitoring environmental parameters to maintain a healthy<br /> and secure working environment.
+    </h4>
+    <ul className="featuresSupply">
+    <li>Continuously track environmental factors</li>
+    <li>Ensure site compliance and safety</li>
+    </ul>
+  </div>
+</div>
 
 
 
 
-    <div className="container-mirrored">
-      <div className="image-section-mirrored">
-        <img src="Argus (Security and Surviellance) 3.png" alt="Product Line" />
-      </div>
-      <div className="content-mirrored">
-        <h1>ENSURE A SAFE WORKPLACE WITH CONTINUOS<br /> MONITORING</h1>
-       <h4 style={{fontWeight:'300'}}>Monitoring environmental parameters to maintain a healthy<br /> and secure working environment.</h4>
-        <ul className="features">
-          <li>Continuously track environmental factors</li>
-          <li>Ensure site compliance and safety</li>
-         
-        </ul>
-        
-      </div>
-    </div>
+    
 
 
 

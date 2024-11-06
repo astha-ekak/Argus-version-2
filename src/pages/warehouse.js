@@ -130,7 +130,7 @@ const Warehouse = () => {
     <img src="123456.png" alt="Product Line" />
   </div>
   <div className="content-mirrored">
-    <h1>Elevate Your Inventory to New Heights</h1>
+    <h1>Elevate Your Inventory<br /> to New Heights</h1>
     <h4 style={{ fontWeight: '300' }}>
     Master your workflow with data-driven insights that unlock efficiency, reduce errors, and transform stock management.
     </h4>

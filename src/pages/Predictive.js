@@ -95,26 +95,22 @@ Monitoring</h1>
 
 
 
- 
 
-    <div className="container-mirrored">
-      <div className="image-section-mirrored">
-        <img src="qwe.png" alt="Product Line" />
-      </div>
-      <div className="content-mirrored">
-        <h1>CUT MACHINE DOWNTIME BY 50% WITH PREDICTIVE MAINTENANCE</h1>
-       <h4 style={{fontWeight:'300'}}>Implement strategies for continuous operation and minimizing unexpected failures and save thousands in downtime costs.</h4>
-       <ul className="features">
-          <li>Catching issues early, preventing halts.</li>
-          <li>Save thousands in downtime costs.</li>
-         
-        </ul>
-        
-      </div>
-    </div>
-
-
-
+    <div className="containerSupply">
+  <div className="image-sectionSupply">
+    <img src="predictive1.png" alt="Product Line" />
+  </div>
+  <div className="contentSupply">
+    <h1>CUT MACHINE DOWNTIME BY 50% WITH PREDICTIVE MAINTENANCE</h1>
+    <h4 style={{ fontWeight: '300' }}>
+    Implement strategies for continuous operation and minimizing unexpected failures and save thousands in downtime costs.
+    </h4>
+    <ul className="featuresSupply">
+    <li>Catching issues early, preventing halts.</li>
+    <li>Save thousands in downtime costs.</li>
+    </ul>
+  </div>
+</div>
 
 
 
@@ -132,7 +128,7 @@ Monitoring</h1>
         
       </div>
       <div className="image-section">
-        <img src="uikh.png" alt="Product Line" />
+        <img src="predictive2.png" alt="Product Line" />
         
       </div>
     </div>
@@ -142,23 +138,23 @@ Monitoring</h1>
 
 
 
+    <div className="containerSupply">
+  <div className="image-sectionSupply">
+    <img src="predictive3.png" alt="Product Line" />
+  </div>
+  <div className="contentSupply">
+    <h1>ENHANCE ASSEST LONGEVITY BY 40%</h1>
+    <h4 style={{ fontWeight: '300' }}>
+    Boost lifespan of equipment by 20-40% through timely maintenance.
+    </h4>
+    <ul className="featuresSupply">
+    <li>Avoid Unnecessary Capital Investment</li>
+    <li>Maintain Ideal Operating Condition</li>
+    </ul>
+  </div>
+</div>
 
-
-    <div className="container-mirrored">
-      <div className="image-section-mirrored">
-        <img src="ujik.png" alt="Product Line" />
-      </div>
-      <div className="content-mirrored">
-        <h1>ENHANCE ASSEST LONGEVITY BY 40%</h1>
-       <h4 style={{fontWeight:'300'}}>Boost lifespan of equipment by 20-40% through timely maintenance.</h4>
-        <ul className="features">
-          <li>Avoid Unnecessary Capital Investment</li>
-          <li>Maintain Ideal Operating Condition</li>
-         
-        </ul>
-        
-      </div>
-    </div>
+    
 
 
 

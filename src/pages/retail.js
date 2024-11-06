@@ -132,7 +132,7 @@ const Retail = () => {
     <img src="78544566.png" alt="Product Line" />
   </div>
   <div className="content-mirrored">
-    <h1>Revolutionize Your Retail Landscape</h1>
+    <h1>Revolutionize Your<br /> Retail Landscape</h1>
     <h4 style={{ fontWeight: '300' }}>
     Explore how intelligent insights can elevate customer experiences, streamline inventory management, and boost sales.
     </h4>

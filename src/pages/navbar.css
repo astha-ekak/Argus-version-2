@@ -50,18 +50,16 @@
 .navbar-links a:hover {
   color: #ccc;
 }
-
-/* Dropdown Menu Styles */
 .dropdown-menu {
   position: absolute; /* Position relative to the parent li */
   top: 100%; /* Position below the parent */
   left: 0; /* Align to the left */
   background-color: #000; /* Match background color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  display: flex; /* Use flexbox for columns */
-  padding: 2px; /* Padding around the dropdown */
-  visibility: hidden; /* Hide by default, controlled by JS */
-  z-index: 1000; /* Ensure it is on top of other elements */
+  display: flex;
+  padding: 2px; 
+  visibility: hidden; 
+  z-index: 1000; 
 }
 
 /* Show dropdown on hover */
@@ -78,11 +76,13 @@
   margin-right: 0; /* Remove margin for the last column */
 }
 
+/* Styles for dropdown links */
 .dropdown-column a {
   display: block; /* Make links block-level for full-width clickable area */
   padding: 2px 5px; /* Padding for dropdown links */
   color: #fff; /* Text color for dropdown links */
   transition: background-color 0.3s ease;
+  font-size: 14px; /* Change this value to make font smaller */
 }
 
 .dropdown-column a:hover {
@@ -108,15 +108,15 @@
 
 
 
-  /*second section*/
-  /* src/pages/Section.css */
+
+
 
 /* Main section styling */
 .main-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full screen height */
+    height: 80vh; /* Full screen height */
     background-color: #f5f5f5;
   }
   
@@ -199,9 +199,54 @@
       padding: 10px 20px;
     }
   }
+
+
+
+
+  .image-section11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.responsive-image11 {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Adjust image size for smaller screens */
+@media (max-width: 992px) {
+    .responsive-image11 {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .responsive-image11 {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .responsive-image11 {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
   /*Third section*/
   .cards1-section {
     margin: 20px;
+    font-family: "Poppins",sans-serif;
   }
   
   .cards1-heading {
@@ -221,7 +266,7 @@
     margin: 0 10px;
     background-color: transparent;
     border-radius: 8px; 
-    padding: 15px; 
+    padding: 25px; 
    
   }
   
@@ -298,312 +343,161 @@
 
 
 
- /* Container styles */
-.container {
+ 
+
+
+ /* App.css */
+
+.container_text_right {
   display: flex;
-  padding: 40px;
-  font-family: "Poppins", sans-serif;
-}
-
-.content {
-  flex: 1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: flex-start;
-}
-
-h1 {
-  font-size: 30px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Visibility and tracking styles */
-.visibility, .tracking {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.visibility h2, .tracking h2 {
-  font-size: 48px;
-  font-weight: bold;
-  color: #1a73e8;
-}
-
-.visibility p, .tracking p {
-  font-size: 18px;
-  color: #555;
-}
-
-.hr-line {
-  border: 1px solid #ddd;
-  width: 100%;
-  margin: 20px 0;
-}
-
-.features {
-  list-style-type: disc;
-  padding-left: 20px;
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.features li {
-  margin-bottom: 10px;
-}
-
-.know-more {
-  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  color: #1a73e8;
-  text-decoration: none;
-  font-size: 16px;
+  font-family: "Poppins",sans-serif;
 }
 
-.know-more span {
-  margin-left: 5px;
-  font-size: 20px;
-}
-
-/* Image and overlay styles */
-.image-section {
-  position: relative;
+.image_section_text_right {
   flex: 1;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-.image-section img {
+.tracking_image_text_right {
   width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
+  height: auto;
+  border-radius: 8px;
 }
 
-.overlay-box {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background-color: transparent;
-  padding: 10px 15px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  
-}
-
-.tracking-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
-
-/* Responsive styling */
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 24px;
-  }
-  .visibility h2, .tracking h2 {
-    font-size: 36px;
-  }
-  .features {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  .content {
-    text-align: center;
-  }
-  h1 {
-    font-size: 22px;
-  }
-  .visibility h2, .tracking h2 {
-    font-size: 32px;
-  }
-  .features {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 10px;
-  }
-  h1 {
-    font-size: 18px;
-  }
-  .visibility h2, .tracking h2 {
-    font-size: 24px;
-  }
-  .features {
-    font-size: 12px;
-  }
-  .overlay-box {
-    padding: 5px 10px;
-    font-size: 12px;
-  }
-}
-
-
-
-  /* Mirrored container with image on the left and content on the right */
-.container-mirrored {
-  display: flex;
-  padding: 70px;
-  font-family: "Poppins", sans-serif;
-
-}
-
-.content-mirrored {
+.text_section_text_right {
   flex: 1;
   padding: 20px;
-  margin-left: 40px;
+  line-height: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-.content-mirrored h1 {
-  font-size: 34px;
-  font-weight: 400;
-  text-align: left;
+.header_text_right {
+  font-size: 28px;
+  color: black;
+  font-weight: 500;
 }
 
-.visibility, .tracking {
+.product_visibility_text_right, .material_tracking_text_right {
   display: flex;
   align-items: baseline;
   gap: 10px;
 }
 
-.visibility h2, .tracking h2 {
-  font-size: 38px;
+.percentage_text_right {
+  font-size: 48px;
+  color: #333;
   font-weight: 400;
 }
 
-.features {
-  list-style-type: disc; /* Adds bullet points */
-  padding-left: 20px; /* Adds space for bullets */
-  margin: 20px 0;
+.description_text_right {
+  font-size: 18px;
+  color: #666;
+  font-weight: 500;
 }
 
-.features li {
-  margin-bottom: 5px;
-  text-align: left;
+.availability_text_right {
+  font-size: 48px;
+  color: #333;
+  font-weight: 400;
 }
 
-.know-more {
-  display: inline-flex;
+.tracking_description_text_right {
+  font-size: 18px;
+  color: #666;
+}
+
+.features_list_text_right {
+  list-style-type: disc;
+  color: #666;
+}
+
+.feature_item_text_right {
+  margin-bottom: 10px;
+}
+
+.know_more_text_right {
+  display: flex;
   align-items: center;
-  color: #545151;
-  text-decoration: none;
- 
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+  
 }
 
-.know-more span {
-  margin-left: 5px;
-  font-size: 20px;
+.know_more_text_text_right {
+text-decoration: none;
+  color:black
 }
 
-.image-section-mirrored {
-  position: relative;
-  flex: 1;
-  padding: 20px;
+.arrow_text_right {
+  margin-left: 8px;
 }
 
-.image-section-mirrored img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Responsive Styling */
-@media (max-width: 1024px) {
-  .content-mirrored h1 {
-    font-size: 22px;
-  }
-
-  .features li {
-    font-size: 20px;
-  }
-
-  .visibility h2, .tracking h2 {
-    font-size: 40px;
-  }
-}
-
+/* Responsive styles */
 @media (max-width: 768px) {
-  .container-mirrored {
-    flex-direction: column;
-    padding: 10px;
+  .container_text_right {
+    flex-direction: column; /* Stack text above image on smaller screens */
   }
 
-  .content-mirrored {
-    text-align: left;
-    padding: 10px;
+  .text_section_text_right {
+    order: 1; /* Ensure text appears first */
+    padding: 14px;
   }
 
-  .image-section-mirrored {
-    padding: 10px;
+  .image_section_text_right {
+    order: 2; /* Image appears below text */
+    padding: 14px;
   }
 
-  .content-mirrored h1 {
+  .header_text_right {
     font-size: 20px;
   }
 
-  .visibility h2, .tracking h2 {
+  .percentage_text_right, .availability_text_right {
     font-size: 36px;
   }
 
-  .features li {
+  .description_text_right, .tracking_description_text_right {
     font-size: 16px;
   }
 
-  .know-more {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .container-mirrored {
-    padding: 5px;
-  }
-
-  .content-mirrored h1 {
-    font-size: 16px;
-  }
-
-  .visibility p, .tracking p {
-    font-size: 10px;
-  }
-
-  .visibility h2, .tracking h2 {
+  .feature_item_text_right {
     font-size: 14px;
   }
 
-  .features li {
-    font-size: 12px;
-  }
-
-  .know-more span {
-    font-size: 5px;
+  .know_more_text_right {
+    font-size: 14px;
   }
 }
 
 
+
+
+ 
 
 
 
 
 /* General styling */
+.card-container .card {
+  background-color: #fff;
+  border: 2px solid #d3d3d3; /* Add a light gray border */
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+ 
+  text-align: center;
+  transition: transform 0.2s; /* Optional: Add a hover effect */
+}
 .App {
   text-align: center;
   font-family: "Poppins",sans-serif;
@@ -627,18 +521,22 @@ h1 {
 }
 
 
-.card {
+.card-container .card {
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
-  width: 250px;
+  width: 220px;
+  
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
+
 .card .icon img {
-  height: 50px;
-  margin-bottom: 15px;
+  height:70px; /* Increased size */
+  width: 70px;  /* Set width */
+  margin-top: 25px;
+  object-fit: cover; /* Keeps aspect ratio of image */
 }
 
 .card h2 {
@@ -672,63 +570,119 @@ h1 {
 
 
 
-/* General styling */
-.app-container {
-  text-align: center;
-  font-family:"Poppins",sans-serif;
-  
-}
+/* App.css */
 
-/* Header styling */
-.app-header .title {
-  font-size: 5rem;
-  font-weight: 300;
-  color:black;
-  margin-top: 50px;
-  margin-left:70px;
-  
-}
-
-/* Statistics container styling */
-.statistics-container {
+.container_use_case {
   display: flex;
-  justify-content: space-around;
-line-height: 0%;
-}
-
-.statistic-card {
-  text-align: left;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins",sans-serif;
  
 }
 
-.statistic-percentage {
-  font-size: 4.4rem;
-  font-weight: 300;
-  color: black;
+.text-section_use_case {
+  flex: 1;
+  padding: 100px;
+  line-height: 120%;
 }
 
-.card-divider {
-  width: 100%;
-  height: 1px;
-  background-color: #00b4d8; 
-  margin: 10px auto;
-}
-
-.statistic-description {
-  font-size: 1.2rem;
+.text-section_use_case h2 {
+  font-size: 28px;
   color:black;
+  font-weight: 500;
 }
 
-/* Responsive styling */
+.product-visibility_use_case, .material-tracking_use_case {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+ 
+ 
+}
+
+.product-visibility_use_case h1, .material-tracking_use_case h2 {
+  font-size: 48px;
+  color: #333;
+  font-weight: 400;
+}
+
+.product-visibility_use_case p, .material-tracking_use_case p {
+  font-size: 18px;
+  color: #666;
+}
+
+.features-list_use_case {
+  
+  list-style-type: disc;
+  color: #666;
+}
+
+.features-list_use_case li {
+  margin-bottom: 3px;
+}
+
+.know-more_use_case {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 16px;
+  color: #333;
+}
+
+.know-more_use_case .arrow_use_case {
+  margin-left: 8px;
+}
+
+.image-section_use_case {
+  flex: 1;
+  padding:100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tracking-image_use_case {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  
+}
+
+
+
 @media (max-width: 768px) {
-  .statistics-container {
+  .container_use_case {
     flex-direction: column;
-    align-items: center;
+  }
+  .text-section_use_case{
+    padding: 14px;
+  }
+  .text-section_use_case h2 {
+    font-size: 18px;
   }
 
-  .app-header .title {
-    font-size: 2rem;
+  .product-visibility_use_case h1, .material-tracking_use_case h2 {
+    font-size: 26px;
   }
+
+  .product-visibility_use_case p, .material-tracking_use_case p {
+    font-size: 14px;
+  }
+  .image-section_use_case {
+    
+    padding:14px;
+    
+  }
+  
+  .features-list_use_case li {
+    font-size: 12px;
+  }
+
+  .know-more_use_case {
+    font-size: 12px;
+  }
+
+ 
 }
-
-

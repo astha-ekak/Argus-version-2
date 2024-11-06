@@ -11,6 +11,7 @@ import Manufacturing from './pages/manufacturing';
 import Warehouse from './pages/warehouse';
 import Retail from './pages/retail';
 import Construction from './pages/construction';
+import Contact from './pages/contact';
 function App() {
   return (
     <Router>
@@ -27,6 +28,7 @@ function App() {
         <Route path="/Warehouse" element={<Warehouse />} />
         <Route path="/Retail" element={<Retail />} />
         <Route path="/Construction" element={<Construction />} />
+        <Route path="/Contact" element={<Contact />} />
         {/* Add other routes here */}
     </Routes>
 </Router>

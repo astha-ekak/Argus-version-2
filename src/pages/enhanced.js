@@ -94,23 +94,24 @@ const Enhanced = () => {
 
 
 
+    <div className="containerSupply">
+  <div className="image-sectionSupply">
+    <img src="enhanced1.png" alt="Product Line" />
+  </div>
+  <div className="contentSupply">
+    <h1>OPTIMIZED THE CHECKOUT PROCESSES</h1>
+    <h4 style={{ fontWeight: '300' }}>
+    Higher Conversion rate by guiding customer towards key products.
+    </h4>
+    <ul className="featuresSupply">
+    <li>Faster checkout, boost efficiency.</li>
+          <li>Cut wait times, improve shopping.</li>
+    </ul>
+  </div>
+</div>
+
  
 
-    <div className="container-mirrored">
-      <div className="image-section-mirrored">
-        <img src="Enhanced Customer 2.png" alt="Product Line" />
-      </div>
-      <div className="content-mirrored">
-        <h1>OPTIMIZED THE CHECKOUT PROCESSES</h1>
-       <h4 style={{fontWeight:'300'}}>Higher Conversion rate by guiding customer towards key products.</h4>
-       <ul className="features">
-          <li>Faster checkout, boost efficiency.</li>
-          <li>Cut wait times, improve shopping.</li>
-         
-        </ul>
-        
-      </div>
-    </div>
 
 
 
@@ -131,7 +132,7 @@ const Enhanced = () => {
         
       </div>
       <div className="image-section">
-        <img src="Enhanced Customer 1.png" alt="Product Line" />
+        <img src="enhanced2.png" alt="Product Line" />
         
       </div>
     </div>
@@ -143,22 +144,25 @@ const Enhanced = () => {
 
 
 
-    <div className="container-mirrored">
-      <div className="image-section-mirrored">
-        <img src="Enhanced Customer 3.png" alt="Product Line" />
-      </div>
-      <div className="content-mirrored">
-        <h1>OPTIMIZE PRODUCT VISIBILITY BY 15%</h1>
-       <h4 style={{fontWeight:'300'}}>Aligning staff resources with peak traffic for smoother operations.</h4>
-        <ul className="features">
-          <li>Maximizing sales opportunities</li>
-          <li>Better Product Placement Insights</li>
+
+    <div className="containerSupply">
+  <div className="image-sectionSupply">
+    <img src="enhanced3.png" alt="Product Line" />
+  </div>
+  <div className="contentSupply">
+    <h1>OPTIMIZE PRODUCT VISIBILITY BY 15%</h1>
+    <h4 style={{ fontWeight: '300' }}>
+    Aligning staff resources with peak traffic for smoother operations.
+    </h4>
+    <ul className="featuresSupply">
+    <li>Maximizing sales opportunities</li>
+    <li>Better Product Placement Insights</li>
          
-        </ul>
-        
-      </div>
-    </div>
+    </ul>
+  </div>
+</div>
 
+  
 
 
 
