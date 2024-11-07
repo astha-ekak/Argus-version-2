@@ -103,7 +103,7 @@ const SupplyChainPage = () => {
   </div>
   <div className="contentSupply">
     <h1>ENHANCED DELIVERY EFFICIENCY</h1>
-    <hr style={{maxWidth:'100%',paddingRight:'100px'}}></hr>
+    <hr style={{maxWidth:'100%'}}></hr>
     <h4 style={{ fontWeight: '300' }}>
     Streamline logistics to ensure faster fulfilment and higher customer satisfaction
     </h4>
@@ -119,6 +119,7 @@ const SupplyChainPage = () => {
       <div className="content">
       <h1>
       GREATER TRANSPARENCY AND TRUST</h1>
+      <hr style={{maxWidth:'100%'}}></hr>
        <h4 style={{fontWeight:'300'}}>Increase Customer Confidence through Traceability and Product Origin Tracking</h4>
         <ul className="features">
           <li>Product Journey Tracking</li>
@@ -150,6 +151,7 @@ const SupplyChainPage = () => {
   </div>
   <div className="contentSupply">
     <h1>IMPROVED INVENTORY MANAGEMENT</h1>
+    <hr style={{maxWidth:'100%'}}></hr>
     <h4 style={{ fontWeight: '300' }}>
     Optimise Stock levels for better Product Availability and Customer Satisfaction
     </h4>

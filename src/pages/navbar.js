@@ -7,26 +7,49 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
 
    
-        const [dropdownVisible, setDropdownVisible] = useState(false);
-      
-        const handleDropdownToggle = () => {
-          setDropdownVisible(!dropdownVisible);
-        };
+
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleDropdownToggle = (event) => {
+    if (window.innerWidth > 768) {
+      // Hover effect for larger screens
+      setDropdownVisible(!dropdownVisible);
+    } else {
+      // Prevent default click behavior for smaller screens
+      event.preventDefault();
+      setDropdownVisible(!dropdownVisible);
+    }
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+
 
 
   return (
     <div>
-    <nav className="navbar">
+      <nav className="navbar">
       <div className="navbar-logo">
         <span className="circle"></span>
         <span className="logo-text">ARGUS</span>
       </div>
-      <ul className="navbar-links">
-      <Link to="/">Home</Link>
+      
+      {/* Hamburger Icon */}
+      <div className="hamburger" onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      {/* Navbar Links */}
+      <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
+        <Link to="/">Home</Link>
         <li
           className="dropdown"
-          onMouseEnter={handleDropdownToggle}
-          onMouseLeave={handleDropdownToggle}
+          onClick={(e) => handleDropdownToggle(e)}
         >
           <a href="#" className="dropdown-toggle">Technology</a>
           {dropdownVisible && (
@@ -34,23 +57,20 @@ const Navbar = () => {
               <div className="dropdown-column">
                 <Link to="/supplychain">Supply chain optimization</Link>
                 <Link to="/Predictive">Predictive Maintenance</Link>
-                
               </div>
               <div className="dropdown-column">
-              <Link to="/Security">Security & Surveillance</Link>
-                
+                <Link to="/Security">Security & Surveillance</Link>
               </div>
               <div className="dropdown-column">
-              <Link to="/Smart">Smart Inventory Management</Link>
-              <Link to="/enhanced">Enhanced Customer Experience</Link>
+                <Link to="/Smart">Smart Inventory Management</Link>
+                <Link to="/enhanced">Enhanced Customer Experience</Link>
               </div>
             </div>
           )}
         </li>
         <li
           className="dropdown"
-          onMouseEnter={handleDropdownToggle}
-          onMouseLeave={handleDropdownToggle}
+          onClick={(e) => handleDropdownToggle(e)}
         >
           <a href="#" className="dropdown-toggle">Industry</a>
           {dropdownVisible && (
@@ -58,15 +78,12 @@ const Navbar = () => {
               <div className="dropdown-column">
                 <Link to="/manufacturing">Manufacturing Industry</Link>
                 <Link to="/warehouse">Warehouse Industry</Link>
-                
               </div>
               <div className="dropdown-column">
-              <Link to="/retail">Retail Industry</Link>
-                
+                <Link to="/retail">Retail Industry</Link>
               </div>
               <div className="dropdown-column">
-              <Link to="/construction">Construction Industry</Link>
-             
+                <Link to="/construction">Construction Industry</Link>
               </div>
             </div>
           )}
@@ -115,17 +132,17 @@ const Navbar = () => {
         <div className="card1">
           <h3 className="card1-heading">Traceability</h3>
           <p className="card1-paragraph">Boosts visibility, enables real-time tracking, ensures compliance, reduces wastage, improves recalls, and strengthens quality control, while building trust and providing insights.</p>
-          <img src="Traceability (Homepage Argus).png" alt="Card 1" className="card-image"  style={{width:'100%',marginTop:'20px',borderRadius:'15px'}}/>
+          <img src="Traceability (Homepage Argus).png" alt="Card 1" className="card-image"  />
         </div>
         <div className="card1">
           <h3 className="card1-heading">Productivity</h3>
           <p className="card1-paragraph">Increases defect detection rates, automates quality checks, improves inventory turnover, reduces downtime, accelerates turnaround times,strengthens operations, and ensures consistent performance across all sectors.</p>
-          <img src="Productivity (Homepage Argus).png" alt="Card 2" className="card-image " style={{width:'100%',marginTop:'20px',borderRadius:'15px'}} />
+          <img src="Productivity (Homepage Argus).png" alt="Card 2" className="card-image "/>
         </div>
         <div className="card1">
           <h3 className="card1-heading">Safety</h3>
           <p className="card1-paragraph">Lowers accident-related expenses by automating safety checks, detecting hazards in real-time, and ensuring compliance, leading to a safer, more efficient work environment.</p>
-          <img src="Safety (Homepage Argus).png" alt="Card 3" className="card-image" style={{width:'100%',marginTop:'20px',borderRadius:'15px'}}/>
+          <img src="Safety (Homepage Argus).png" alt="Card 3" className="card-image"/>
         </div>
       </div>
     </section>
@@ -285,37 +302,38 @@ const Navbar = () => {
 
 
 
-    <div className="app-container">
-      <header className="app-header">
-        <h1 className="title">The Numbers</h1>
-      </header>
+    <div className="app-container213">
+    <header className="app-header213">
+        <h1 className="title213">The Numbers</h1>
+    </header>
 
-      <div className="statistics-container">
-        <div className="statistic-card">
-          <h2 className="statistic-percentage">20%</h2>
-          <div className="card-divider"></div>
-          <p className="statistic-description">Operations Cost Reduce</p>
+    <div className="statistics-container213">
+        <div className="statistic-card213">
+            <h2 className="statistic-percentage213">20%</h2>
+            <div className="card-divider213"></div>
+            <p className="statistic-description213">Operations Cost Reduce</p>
         </div>
 
-        <div className="statistic-card">
-          <h2 className="statistic-percentage">50%</h2>
-          <div className="card-divider"></div>
-          <p className="statistic-description">Production Increase</p>
+        <div className="statistic-card213">
+            <h2 className="statistic-percentage213">50%</h2>
+            <div className="card-divider213"></div>
+            <p className="statistic-description213">Production Increase</p>
         </div>
 
-        <div className="statistic-card">
-          <h2 className="statistic-percentage">40%</h2>
-          <div className="card-divider"></div>
-          <p className="statistic-description">Increased Throughput</p>
+        <div className="statistic-card213">
+            <h2 className="statistic-percentage213">40%</h2>
+            <div className="card-divider213"></div>
+            <p className="statistic-description213">Increased Throughput</p>
         </div>
 
-        <div className="statistic-card">
-          <h2 className="statistic-percentage">30%</h2>
-          <div className="card-divider"></div>
-          <p className="statistic-description">Accelerate time-to-market</p>
+        <div className="statistic-card213">
+            <h2 className="statistic-percentage213">30%</h2>
+            <div className="card-divider213"></div>
+            <p className="statistic-description213">Accelerate time-to-market</p>
         </div>
-      </div>
     </div>
+</div>
+
 <Footer />
 
 

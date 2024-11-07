@@ -222,7 +222,7 @@
   
   .content {
     flex: 1;
-    margin-top: 130px;
+    margin-top: 150px;
    margin-left: 50px;
    padding-left: 50px;
   }
@@ -368,7 +368,7 @@
   
   .contentSupply {
     flex: 1;
-   margin-top: 130px;
+   margin-top: 150px;
     margin-left: 50px;
   }
   
@@ -470,16 +470,16 @@
   @media (max-width: 480px) {
     /* Further reduce font sizes on very small screens */
     .containerSupply {
-      padding: 5px;
+      padding: 0px;
     }
     h1 {
-      font-size: 16px;
+      font-size: 20px;
     }
     .contentSupply {
       text-align: left;
       order: 2;
-      margin-top: 20px;
-      margin-left: 30px;
+      margin-top: 10px;
+      margin-left: 10px;
     }
   
     .image-sectionSupply {
@@ -671,7 +671,9 @@ line-height: 0%;
     }
     .responsive-heading {
       font-size: 1.2rem;
-      margin-top:20px;
+      margin-top:50px;
+      margin-left: 20px;
+      color: #000;
     }
     .heading-container{
         padding-left: 10px;

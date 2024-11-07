@@ -81,7 +81,7 @@ const Predictive = () => {
     <div className="supply-container">
       <div className="supply-header">
         <p className="supply-subheading">THE ASSEST INSIGHT</p>
-        <h1 className="supply-title">Predictive Maintenance &
+        <h1 className="supply-title">Predictive Maintenance &<br/>
 Machine Performance
 Monitoring</h1>
         <p className="supply-description">

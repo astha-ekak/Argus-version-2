@@ -1,115 +1,120 @@
 /* Container Styling */
 .container-mirrored {
-    display: flex;
-    height: 90vh; /* Default height for large screens */
-    background-color:transparent;
-    overflow: hidden;
-    flex-direction: row;
-    font-family: "Poppins",sans-serif;
+  display: flex;
+  height: 90vh; /* Default height for large screens */
+  background-color: transparent;
+  overflow: hidden;
+  flex-direction: row; /* Default is row for large screens */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Left Column (Image Section) */
+.image-section-mirrored {
+  flex: 1;
+  display: flex;
+}
+
+.image-section-mirrored img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Right Column (Content Section) */
+.content-mirrored {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  text-align: left;
+}
+
+.content-mirrored h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.content-mirrored h4 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/* "Know More" Button */
+.know-more-btn {
+  padding: 5px 10px;
+  background-color: #f9f6f6;
+  color: #050505;
+  border: none;
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.know-more-btn:hover {
+  background-color: #000000;
+  color: #f5f5f5;
+}
+.line {
+  display: block; /* Show each line as a block on larger screens */
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 576px) {
+  .container-mirrored {
+      flex-direction: column; /* Stack image and content vertically */
+      height: auto; /* Adjust height to fit content */
+      padding: 10px;
   }
-  
-  
-  /* Left Column (Image Section) */
-  .image-section-mirrored {
-    flex: 1;
-    display: flex;
-  }
-  
+
+  /* Image Section Adjustments */
   .image-section-mirrored img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire column */
+      width: 90%;
+      height: auto; 
+      padding:10px;
+      object-fit: cover;
   }
   
-  /* Right Column (Content Section) */
+  /* Content Section Adjustments */
   .content-mirrored {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 40px;
-    text-align: left;
+      padding: 10px;
+      align-items: flex-start; /* Align text to the left */
+      text-align: left; /* Keep text aligned to the left */
   }
-  
+
   .content-mirrored h1 {
-    font-size: 64px;
-   
-    margin-bottom: 10px;
+      font-size: 24px;
+      margin-bottom: 5px;
   }
-  
+
   .content-mirrored h4 {
-    font-size: 16px;
-    font-weight: 300;
-    margin-bottom: 20px;
+      font-size: 12px;
+      font-weight: 300;
+      margin-bottom: 10px;
   }
-  
-  /* "Know More" Button */
+  .line {
+    display: inline;
+  }
+
+  /* "Know More" Button Adjustments */
   .know-more-btn {
-    padding: 5px 10px;
-    background-color: #f9f6f6;
-    color: #050505;
-    border: none;
-    width:20%;
-    border: 1px solid black;
-    border-radius: 20px;
-    font-size: 14px;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease;
+      padding: 5px 10px;
+      font-size: 10px;
+      width: 40%;
+      background-color: #00b4d8;
+      color: #fff;
   }
-  
+
   .know-more-btn:hover {
-    background-color: #000000;
-    color:#f5f5f5
+      background-color: #0096c7;
   }
-  @media(max-width:576px){
-    .container-mirrored {
-       
-        height: 35vh;
-        
-      }
-  .image-section-mirrored img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire column */
-  }
-  
-  /* Right Column (Content Section) */
-  .content-mirrored {
-
-    padding: 5px;
-
-  }
-  
-  .content-mirrored h1 {
-    font-size: 14px;
-   
-    margin-bottom: 5px;
-  }
-  
-  .content-mirrored h4 {
-    font-size: 8px;
-    font-weight: 200;
-    margin-bottom: 5px;
-  }
-  
-  /* "Know More" Button */
-  .know-more-btn {
-    padding: 2px 2px;
-    background-color: #00b4d8;
-    color: #fff;
-    border: none;
-    width:50%;
-    border-radius: 20px;
-    font-size: 10px;
-    
-  }
-  
-  .know-more-btn:hover {
-    background-color: #0096c7;
-  }
-  }
-
+}
 
 
 
@@ -171,10 +176,12 @@
 @media (max-width: 576px) {
   .centered-section h2 {
     font-size: 24px; /* Further reduce title size for small screens */
+    margin-top: 0px;
   }
 
   .centered-section h6 {
-    font-size: 12px; /* Further reduce subtitle size for small screens */
+    font-size: 14px; /* Further reduce subtitle size for small screens */
+    text-align: left;
   }
   /* Responsive Video Styles */
 .video-container iframe {
@@ -193,111 +200,125 @@
 
 
 
+.app2 {
+  font-family: "Poppins",sans-serif;
+  padding-left:250px;
+  padding-right: 250px;
+  text-align: center;
+  margin-top: 60px;
+}
 
-  .app2 {
-    font-family: "Poppins",sans-serif;
-    padding-left:250px;
-    padding-right: 250px;
-    text-align: center;
-    margin-top: 60px;
+.tabs2 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab2 {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.tab2.active2 {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.content2 h2 {
+  font-size: 16px;
+  color: rgb(52, 51, 51);
+  font-weight: 600;
+}
+
+.content2 hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.content2 p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+  .app2{
+    padding-left:0px;
+  padding-right: 0px;
+  margin-top: 10px;
+  text-align: left;
   }
-  
   .tabs2 {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: left;
   }
-  
+  .active2{
+    align-items: left;
+  }
   .tab2 {
-    background: none;
-    border: none;
     font-size: 14px;
-    cursor: pointer;
-    padding: 10px;
-    transition: color 0.3s ease;
-  }
-  
-  .tab2.active2 {
-    color: #000;
-    border-bottom: 2px solid #000;
-  }
-  
-  .content2 h2 {
-    font-size: 16px;
-    color: rgb(52, 51, 51);
-    font-weight: 600;
-  }
-  
-  .content2 hr {
-    margin: 10px 0;
-    border: none;
-    border-top: 1px solid #ccc;
-  }
-  
-  .content2 p {
-    font-size: 14px;
-    line-height: 1.5;
-  }
- 
-
-  @media (max-width: 768px) {
-    .app2{
-      padding-left:10px;
-    padding-right: 10px;
-    margin-top: 10px;
-    }
-    .tabs2 {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .tab2 {
-      font-size: 16px;
-    }
-  
-    .content2 h2 {
-      font-size: 20px;
-    }
-  
-    .content2 p {
-      font-size: 14px;
-    }
-    .image-column2 img {
-      width: 100%;
-      height: auto;
-      border-radius: 15px;
-    }
-  }
-  
-  .content2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
     text-align: left;
-    flex-wrap: wrap;
-    margin: 20px;
-  }
-  
-  .text-column2{
-    flex: 1;
-    min-width: 300px;
-    padding: 20px;
-  }
-  .image-column2 {
-    flex: 1;
+    margin-left: 10px;
    
+  }
+.text-column2{
+  padding:0;
+  margin-right:0px;
+ 
+}
+  .content2 h2 {
+    font-size: 14px;
+    padding:0px;
+    text-align: left;
+  }
 
+  .content2 p {
+    font-size: 12px;
   }
   .image-column2 img {
-    width: 80%;
-    height: 70%;
+    width: 100%;
+    height: auto;
     border-radius: 15px;
+    margin-top:15px
   }
+}
+
+.content2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: left;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.text-column2{
+  flex: 1;
+  min-width: 300px;
+  margin-right: 60px;
+  margin-top: 15px;
   
+}
+.image-column2 {
+  flex: 1;
+ 
+
+}
+.image-column2 img {
+  width: 80%;
+  height: 70%;
+  border-radius: 15px;
+}
 
 
 
 
+ 
 
 
 
@@ -364,6 +385,9 @@
 
 /* Responsive styling */
 @media (max-width: 768px) {
+  .app-container2{
+    padding:0px
+  }
   .statistics-container2 {
     flex-direction: column;
     align-items: left;
@@ -373,6 +397,7 @@
   .app-header2 .title2 {
     font-size: 1.5rem;
     margin-left: 20px;
+    margin-top: 10px;
   }
   .statistic-description21 {
     font-size: 0.8rem;
@@ -385,8 +410,6 @@
     margin-top:20px;
   }
 }
-
-
 
 
 
@@ -463,34 +486,67 @@
   font-weight: 300;
   color: #333;
 }
-@media (max-width: 576px) {
+
+/* Adjustments for medium screens */
+@media (max-width: 768px) {
   .app-container3 {
-  
-    padding-left: 5px;
-    margin-top: 10px;
-   
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
   }
-  
-  
+
+  .content3 {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
   .title3 {
-    font-size: 1.5rem; /* Smaller title on small screens */
+    font-size: 2.5rem;
+  }
+
+  .card-container3 {
+    grid-template-columns: 1fr; /* Stacks cards vertically */
+    gap: 15px;
+    max-width: 100%;
+  }
+
+  .card3 {
+    padding: 30px;
+    text-align: center;
   }
 
   .connect-button3 {
-    padding: 8px 16px; /* Smaller button on small screens */
-    font-size: 0.9rem; /* Smaller font size for the button */
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    margin-top: 10px;
   }
 
   .icon3 {
-    font-size: 1.5rem; /* Smaller icons on small screens */
+    font-size: 1.8rem;
   }
 
   .card-title3 {
-    font-size: 0.9rem; /* Smaller card titles */
+    font-size: 1rem;
+  }
+}
+
+/* Further adjustments for small screens */
+@media (max-width: 576px) {
+  .title3 {
+    font-size: 1.3rem;
   }
 
+  .card3 {
+    padding: 10px;
+  }
 
+  .icon3 {
+    font-size: 1.5rem;
+  }
 
-  
-}              
+  .card-title3 {
+    font-size: 0.9rem;
+  }
+}      

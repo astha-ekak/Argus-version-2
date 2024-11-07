@@ -60,13 +60,18 @@
   }
   
   .footer-copyright {
-    text-align: center;
+    text-align:left;
     font-size: 0.8rem;
     color: #777;
     margin-top: 20px;
+    margin-left:100px
   }
   
   .trademark {
     font-size: 0.6rem;
   }
-  
+  @media(max-width:576px){
+    .footer-copyright{
+      margin-left: 5px;
+    }
+  }

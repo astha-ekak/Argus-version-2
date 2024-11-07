@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import './manufacturing.css';
+
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
@@ -130,9 +131,11 @@ const Navbar = () => {
     <img src="Manufacturing 1.png" alt="Product Line" />
   </div>
   <div className="content-mirrored">
-    <h1>Transform<br />
-Operations <br />
-Beyond the Line</h1>
+    <h1>
+    <span className="line">Transform </span>
+      <span className="line">Operations </span>
+      <span className="line">Beyond the Line</span>
+    </h1>
     <h4 style={{ fontWeight: '300' }}>
     Unlock the power of smart insights to optimize every facet of your manufacturing process.
     </h4>
